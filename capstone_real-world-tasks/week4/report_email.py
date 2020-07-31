@@ -22,7 +22,6 @@ def main():
     now = datetime.now()
     title = "Processed Update on " + "{} {}, {}".format(now.strftime('%B'), now.strftime('%d'), now.strftime('%Y'))
     paragraph = "<br />".join(make_paragraph())
-    # print(title, paragraph) #delete later
     reports.generate_report(attachment, title, paragraph)
     # send an email
     sender = "automation@example.com"
